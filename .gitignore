@@ -1,0 +1,11 @@
+.DS_Store
+apps/*/translations/en
+node_modules
+public
+.idea
+coverage
+.env
+output/
+*.iml
+anchore-reports
+.nyc_output

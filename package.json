@@ -1,0 +1,40 @@
+{
+  "name": "save-return-lookup-ui",
+  "version": "1.0.0",
+  "description": "A UI that looks up save and return items off a SQL table",
+  "main": "server.js",
+  "engines": {
+    "node": "^14.15.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "hof-build watch",
+    "test:lint": "eslint . --config ./node_modules/eslint-config-hof/default.js",
+    "test:snyk": "snyk config set api=SNYK_TOKEN && snyk test",
+    "build": "hof-build",
+    "postinstall": "hof-build"
+  },
+  "author": "Sulthan Ahmed & Alex Swann",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hof": "^19.8.0",
+    "jquery": "^3.5.1",
+    "knex": "^0.21.2",
+    "moment": "^2.27.0",
+    "morgan": "^1.10.0",
+    "morgan-json": "^1.1.0",
+    "node-json-logger": "0.0.11",
+    "notifications-node-client": "^4.8.0",
+    "pg": "^8.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-hof": "^1.2.1",
+    "snyk": "^1.696.0"
+  },
+  "resolutions": {
+    "underscore": "^1.12.1"
+  }
+}
