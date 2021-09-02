@@ -20,4 +20,6 @@ COPY --chown=999:998 . /app
 RUN yarn install --frozen-lockfile --production --ignore-optional && \
     yarn run postinstall
 
+EXPOSE 8080 3000
+
 CMD ["/app/run.sh"]
