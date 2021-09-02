@@ -1,7 +1,7 @@
 'use strict';
 
 const knexfile = require('../../../knexfile');
-const knexfileConfig = knexfile[process.env.NODE_ENV ? 'production' || 'development'];
+const knexfileConfig = knexfile[process.env.NODE_ENV ? 'production' : 'development'];
 const tableName = knexfile.tableName;
 const knex = require('knex')(knexfileConfig);
 
