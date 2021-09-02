@@ -1,8 +1,9 @@
 'use strict';
 
+const config = require('../../../config');
 const knexfile = require('../../../knexfile');
 const knexfileConfig = knexfile[process.env.NODE_ENV ? 'production' : 'development'];
-const tableName = knexfile.tableName;
+const tableName = config.tableName;
 const knex = require('knex')(knexfileConfig);
 
 const selectableProps = [

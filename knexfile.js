@@ -2,7 +2,6 @@
 
 // Update with your config settings.
 module.exports = {
-  tableName: process.env.TABLE_NAME || 'reports',
   development: {
     client: process.env.CLIENT || 'postgresql',
     connection: {

@@ -1,6 +1,7 @@
 'use strict';
 
 const result = require('./behaviours/result');
+const config = require('../../config');
 
 module.exports = {
   name: 'save-return-lookup-ui',
@@ -32,6 +33,7 @@ module.exports = {
     },
     '/result': {
       behaviours: [result, 'complete'],
+      template: `${config.serviceType}-results`,
       next: '/'
     }
   }
