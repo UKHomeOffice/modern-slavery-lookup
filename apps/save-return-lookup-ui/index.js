@@ -2,9 +2,8 @@
 
 const result = require('./behaviours/result');
 
-
 module.exports = {
-  name: 'ms-lookup',
+  name: 'save-return-lookup-ui',
   baseUrl: '/',
   steps: {
     '/type-of-query': {
