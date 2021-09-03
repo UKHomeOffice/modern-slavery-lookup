@@ -11,11 +11,6 @@
     "start:dev": "hof-build watch",
     "test:lint": "eslint . --config ./node_modules/eslint-config-hof/default.js",
     "test:snyk": "snyk config set api=SNYK_TOKEN && snyk test",
-    "db:setup": "yarn run db:migrate && yarn run db:seed",
-    "db:test": "yarn run db:setup && yarn run db:rollback",
-    "db:migrate": "knex migrate:latest",
-    "db:rollback": "knex migrate:rollback",
-    "db:seed": "knex seed:run",
     "build": "hof-build",
     "postinstall": "hof-build"
   },
@@ -25,6 +20,7 @@
     "hof": "^19.8.0",
     "jquery": "^3.5.1",
     "knex": "^0.21.2",
+    "ms-migrations": "^1.0.2",
     "pg": "^8.3.0"
   },
   "devDependencies": {
