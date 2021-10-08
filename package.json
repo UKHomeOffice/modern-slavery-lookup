@@ -1,6 +1,6 @@
 {
   "name": "save-return-lookup-ui",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A UI that looks up save and return items off a SQL table",
   "main": "server.js",
   "engines": {
