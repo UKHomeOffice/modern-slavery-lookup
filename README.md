@@ -3,6 +3,9 @@ Provides a service layer to talk to a database to view records on a SQL table us
 
 **Reading:**  This service will connect to a SQL database, get the data back off a single table and show in the UI entries for a single table. Currently these can be accessed using either a save and return session ID or email.
 
+## Database connection
+This repo uses ms-migrations as default to connect to postgres. You could supply a different dependency to connect to a DB if you wanted to using the `MIGRATIONS_REPO` environmental variable. Ms-migrations uses knex which, if NODE_ENV is not set, will try to connect to a localhost instance of postgres. If it is set, it will try to use the below environmental variables `DB_HOST` etc... to connect to a formal DB using the proper credentials.
+
 ## Env Vars
 You can set the following to specific how you want your results to look:
 - `SERVICE_TYPE` - This specifies what service you are using the lookup UI for. The default is for the modern slavery service. But additional templates could be created which this drives.
