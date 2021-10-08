@@ -17,7 +17,7 @@
   "author": "Sulthan Ahmed & Alex Swann",
   "license": "MIT",
   "dependencies": {
-    "hof": "^19.8.0",
+    "hof": "^19.11.10",
     "jquery": "^3.5.1",
     "ms-migrations": "^2.0.0"
   },
