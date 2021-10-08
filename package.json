@@ -1,6 +1,6 @@
 {
   "name": "save-return-lookup-ui",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A UI that looks up save and return items off a SQL table",
   "main": "server.js",
   "engines": {
@@ -17,11 +17,10 @@
   "author": "Sulthan Ahmed & Alex Swann",
   "license": "MIT",
   "dependencies": {
-    "hof": "^19.8.0",
+    "hof": "^19.11.10",
     "jquery": "^3.5.1",
-    "knex": "^0.21.2",
-    "ms-migrations": "^1.0.2",
-    "pg": "^8.3.0"
+    "knex": "^0.95.11",
+    "ms-migrations": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
