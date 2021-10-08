@@ -19,6 +19,7 @@
   "dependencies": {
     "hof": "^19.11.10",
     "jquery": "^3.5.1",
+    "knex": "^0.95.11",
     "ms-migrations": "^2.0.0"
   },
   "devDependencies": {
