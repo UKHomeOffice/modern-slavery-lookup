@@ -53,7 +53,11 @@ module.exports = superclass => class extends superclass {
           const reportsList = [];
 
           reports.forEach(report => {
-            reportsList.push(report.session);
+            reportsList.push({
+              session: report.session,
+              createdAt: report.created_at,
+              updatedAt: report.updated_at
+            });
           });
 
           req.sessionModel.set('result', reportsList);
