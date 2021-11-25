@@ -46,9 +46,12 @@ module.exports = superclass => class extends superclass {
           super.getValues(req, res, next);
         });
     } else {
+      // apostrophes in emails need to be doubled up in order to escape them in SQL
+      const email = req.sessionModel.get('email').replace("'", "''");
+
       knex.select(selectableProps)
         .from(tableName)
-        .whereRaw(`LOWER(email) LIKE LOWER('%${req.sessionModel.get('email')}%')`)
+        .whereRaw(`LOWER(email) LIKE LOWER('%${email}%')`)
         .then(reports => {
           const reportsList = [];
 
