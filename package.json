@@ -20,7 +20,7 @@
   "dependencies": {
     "hof": "^19.11.14",
     "jquery": "^3.5.1",
-    "knex": "^0.95.11",
+    "knex": "^0.95.15",
     "ms-schema": "^1.2.0"
   },
   "devDependencies": {
