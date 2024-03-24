@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "hof": "^19.11.14",
-    "jquery": "^3.5.1",
+    "jquery": "^3.7.1",
     "knex": "^0.95.11",
     "ms-schema": "^1.2.0"
   },
